@@ -47,3 +47,5 @@ itemTwo.textContent = "red";
 itemThree.textContent = "blue";
 // add the whole list to the body of the page
 bodySelect.appendChild(myList);
+// finally, remove an element from the page
+itemTwo.remove();
