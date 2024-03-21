@@ -1,0 +1,21 @@
+.box {
+  width: 160px;
+  height: 160px;
+  border: 10px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.second-box {
+  width: 200px;
+  height: 200px;
+  border: 10px solid black;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* this bit of code would apply the box-sizing CSS to all elements on the page (Just remove that next slash)
+/* {
+    box-sizing: border-box;
+} */
