@@ -52,7 +52,7 @@ if (anotherAge > 17) {
   console.log(
     "You can watch any movie with any age rating. That's nice isn't it?"
   );
-} else if (anotherAge === 17) {
+} else if (anotherAge <= 17) {
   if (movieRating === "U") {
     console.log(
       `You can watch this movie, because you are ${anotherAge}. It's meant for kids, but aren't we all?...`
