@@ -7,10 +7,11 @@ This respository will serve as a way to keep my Tech Educators projects in order
 As you scroll down, the weeks will be in reverse chronological order.
 They'll show a brief about what we covered each day.
 
-- Week One -
-  -- Day One --
-  Basic HTML
-  CSS Selectors
+-- Week One --
+
+-- Day One --
+Basic HTML
+CSS Selectors
 
 -- Day Two --
 CSS Box Model and using VS Code
