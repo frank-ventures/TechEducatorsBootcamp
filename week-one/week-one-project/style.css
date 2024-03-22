@@ -1,3 +1,4 @@
+/* whole page settings */
 body,
 h1,
 h2,
@@ -9,6 +10,7 @@ p {
   color: darkolivegreen;
 }
 
+/* General design of the anchors */
 a {
   color: darkolivegreen;
   text-decoration: none;
@@ -16,15 +18,6 @@ a {
   font-size: 1.25rem;
   background-color: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(128, 128, 128, 0.15);
-}
-
-a:hover {
-  background-color: rgba(187, 187, 187, 0.85);
-  color: rgb(255, 255, 255);
-}
-a:active {
-  background-color: darkolivegreen;
-  color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -35,6 +28,10 @@ h1 {
 h2,
 h3 {
   font-weight: 350;
+}
+
+h3 {
+  font-style: italic;
 }
 
 header {
@@ -52,6 +49,7 @@ header {
   border-bottom: 1.5px solid rgba(128, 128, 128, 0.5);
 }
 
+/* These next two give some layout to the text within the header */
 .head-and-tag {
   display: flex;
   flex-direction: column;
@@ -62,9 +60,7 @@ header {
   padding-left: 20px;
 }
 
-.tagline {
-}
-
+/* These next three classes affect the containers which seperate the page into 3 */
 .intro {
   height: 100vh;
   background-image: url("./assets/campsite1.jpg");
@@ -84,7 +80,7 @@ header {
 
   position: relative;
 
-  border-top: 1.5px solid rgba(128, 128, 128, 0.5);
+  border-top: 1.5px solid rgba(128, 128, 128, 0.8);
 }
 
 .contact {
@@ -97,15 +93,16 @@ header {
   border-top: 1.5px solid rgba(128, 128, 128, 0.5);
 }
 
+/* This class affects the text box on top on the images */
 .section-contents {
+  /* This bit positions the text box over the individual images */
   position: absolute;
-  bottom: 125px;
+  bottom: 25%;
   left: 2rem;
-  width: 35%;
+  width: 25%;
   padding: 1rem;
-
   height: auto;
-
+  /* this flex allows the elements inside to appear vertically*/
   display: flex;
   flex-direction: column;
 
@@ -113,6 +110,29 @@ header {
 
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 2%;
+}
+
+/* the div which holds the 'background changing' buttons */
+.change-image {
+  position: absolute;
+  bottom: 12%;
+  left: 2rem;
+  gap: 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+}
+
+/* the class name for the background changing buttons */
+.background-changer {
+  /* The next 5 lines make the buttons circular, and appear without text in them  */
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: 0;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
 }
 
 .section-contents a {
@@ -128,11 +148,13 @@ header {
   transform: translateX(-50%);
 }
 
-.section-contents a:hover {
+/* These psuedo classes give hover and click changes to the anchors in both the 'nav' and on the page */
+a:hover {
   background-color: rgba(187, 187, 187, 0.85);
+  color: rgb(255, 255, 255);
 }
 
-.section-contents a:active {
+a:active {
   background-color: darkolivegreen;
   color: rgb(255, 255, 255);
 }
@@ -140,7 +162,7 @@ header {
 footer {
   color: rgba(255, 255, 255, 0.808);
   padding: 25px;
-  background-color: rgb(25, 114, 63);
+  background-color: rgb(21, 88, 50);
   border-top: 1.5px solid rgba(128, 128, 128, 0.5);
   text-align: center;
 }
