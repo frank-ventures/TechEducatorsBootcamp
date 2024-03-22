@@ -4,12 +4,15 @@
 
 /* General page settings */
 body {
-  margin: 0;
-  height: 100vh;
-  min-width: 100vw;
+  margin: 5px;
+  height: 95vh;
+  min-width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  border: 1.5px solid black;
+  border-radius: 20px;
 }
 
 /* flex display for the Business name */
