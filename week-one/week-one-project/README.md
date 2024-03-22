@@ -63,3 +63,13 @@ I used ChatGPT to look over the code I had written (which I've retained in app.j
 I had to add an extra 'else if' to it's suggested code, to make sure the colours were correct in all states.
 
 Following that I duplicated the code so that each section had buttons, and the buttons changed the background (I left out duplicating the 'mouseover' code until we do functions!)
+
+### Audio
+
+I added a 'nature themed' audio track to my web page.
+
+I put the controls in the header so the user always has access to them.
+
+I set the volume down upon loading of the page so that the user wasn't deafened, as the track is quite loud! I found out how to do so here: https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/volume
+
+Then styled them to keep with the pages theme.

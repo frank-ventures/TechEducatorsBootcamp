@@ -13,12 +13,23 @@
         <h1>Pequeño-cológico Campamento</h1>
         <p class="tagline">The Tiny Eco Campsite</p>
       </div>
-      <nav>
-        <a href="#top">Home</a>
-        <a href="#introSection">About</a>
-        <a href="#storySection">Our Story</a>
-        <a href="#contactSection">Contact</a>
-      </nav>
+      <div class="nav">
+        <nav>
+          <a href="#top">Home</a>
+          <a href="#introSection">About</a>
+          <a href="#storySection">Our Story</a>
+          <a href="#contactSection">Contact</a>
+        </nav>
+        <div class="audio-controls">
+          <button class="audio-control" id="playBtn">Play</button>
+          <button class="audio-control" id="pauseBtn">Pause</button>
+          <audio
+            src="./assets/nature-tune.mp3"
+            controls
+            id="audioPlayer"
+          ></audio>
+        </div>
+      </div>
     </header>
 
     <main>

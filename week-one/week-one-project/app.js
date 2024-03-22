@@ -10,6 +10,19 @@ const contactBtnTwo = document.getElementById("contactBtnTwo");
 const introSection = document.getElementById("introSection");
 const storySection = document.getElementById("storySection");
 const contactSection = document.getElementById("contactSection");
+// now the audio
+const audio = document.getElementById("audioPlayer");
+const playBtn = document.getElementById("playBtn");
+const pauseBtn = document.getElementById("pauseBtn");
+// it's a loud track so this sets the volume lower on page load
+audio.volume = 0.2;
+
+playBtn.addEventListener("click", function () {
+  audio.play();
+});
+pauseBtn.addEventListener("click", function () {
+  audio.pause();
+});
 
 // these next lines set the initial button colour to show which image the user is currently on.
 introBtnOne.style.backgroundColor = "darkolivegreen";
