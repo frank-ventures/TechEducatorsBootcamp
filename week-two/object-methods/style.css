@@ -1,0 +1,30 @@
+/* Good solution for all */
+* {
+  box-sizing: border-box;
+}
+.box1 {
+  padding-bottom: 20px;
+  width: 50px;
+  background-color: tomato;
+}
+
+.box2 {
+  padding-top: 30px;
+  width: 50px;
+
+  background-color: magenta;
+}
+
+/* This class is the parent container of the child divs. */
+/* It has the property of 'min-height: 100%', which basically says "the minimum height of this container, will be the height of it's largest child. It also sets that as the height of all other containers.  */
+.flex-parent {
+  min-height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+.flex-child {
+  width: 90px;
+  background-color: aquamarine;
+  border: 1px solid black;
+}
