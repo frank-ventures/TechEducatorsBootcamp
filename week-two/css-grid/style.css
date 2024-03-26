@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: 100px;
+  grid-auto-flow: column;
+}
+
+.box {
+  background-color: tomato;
+  max-width: 300px;
+  max-height: 500px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+/* Task Two Holy Grail things */
+
+body {
+  background: #e4e4e4;
+  padding: 5px;
+  height: 100vh;
+  margin: 0;
+
+  font: 500 100% system-ui, sans-serif;
+  text-transform: uppercase;
+}
+
+.holy-grail {
+  background-color: white;
+  height: 500px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
+  gap: 1px;
+
+  > * {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+.header {
+  grid-column: 1 / -1;
+  background-color: tomato;
+}
+.nav {
+  grid-column: 2 / -1;
+  background-color: aqua;
+}
+.aside {
+  grid-column: 1 / 2;
+  grid-row: 2 / 5;
+  background-color: blueviolet;
+}
+.article {
+  grid-column: 2/-1;
+  grid-row: 3/5;
+  background-color: darkgoldenrod;
+}
+.footer {
+  grid-column: 1/-1;
+  grid-row: 5/5;
+  background-color: burlywood;
+}
