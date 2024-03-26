@@ -1,3 +1,7 @@
+/* added this to tidy up header width */
+* {
+  box-sizing: border-box;
+}
 /* whole page settings */
 body,
 h1,
