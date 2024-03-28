@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./app.js" defer></script>
+    <script src="./app-json.js" defer></script>
+    <title>Storage</title>
+  </head>
+  <body>
+    <h1>Locally storing</h1>
+    <hr />
+    <h2>It's not boring</h2>
+    <p>Best not be yawning (that's enough now)</p>
+    <div class="first-counter">
+      <p id="pageCounter"></p>
+      <button id="btn">Clickoh!</button>
+      <button id="reset">Reset your count!</button>
+    </div>
+    <div class="second-counter">
+      <hr />
+      <h2>Here we have two counters, which use JSON to store local values</h2>
+      <p id="blue" style="background-color: aqua; border: 1px solid grey"></p>
+      <p id="orange" style="background-color: orange; border: 1px solid grey""></p>
+      <button id="blueBtn">Blue me!</button>
+      <button id="orangeBtn">Orange you glad?</button>
+      <button id="resetBoth">Wanna start again?</button>
+    </div>
+    <div class="workshop">
+      <hr />
+      <h2>Would you like to set a background colour?</h2>
+      <form>
+        <label for="userColour">Enter a colour here:</label>
+        <input id="userColour" name="uColour" type="text">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
