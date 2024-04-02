@@ -84,6 +84,10 @@ body {
     height: 200px;
     width: 60%;
   }
+  * {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
 }
 
 @media (min-width: 2000px) {
@@ -96,5 +100,9 @@ body {
   }
   .box {
     width: 100%;
+  }
+  * {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 }
