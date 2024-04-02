@@ -106,13 +106,11 @@ h2 {
 
 .content-section a {
   color: white;
-  background-color: darkblue;
   padding: 5px;
-  width: 20%;
   text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .content-section {
     flex-direction: column;
   }
