@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms go here!</h1>
+    <p>Yes they do!</p>
+    <form id="myForm">
+      <label for="un">Username</label>
+      <input name="username" type="text" placeholder="Username" id="un" />
+      <label for="pw">Password</label>
+      <input
+        name="password"
+        type="password"
+        placeholder="Password"
+        id="pw"
+        required
+      />
+      <label for="email">Email</label>
+      <input
+        name="email"
+        type="email"
+        placeholder="Email please"
+        id="email"
+        required
+      />
+      <button id="goTime">Submit Me!</button>
+    </form>
+  </body>
+</html>

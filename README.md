@@ -16,6 +16,18 @@ Arrays
 Loops
 On keypress colour changer
 
+### -- Day Two --
+
+Objects
+Methods
+CSS Grid
+
+### -- Day Three ---
+
+Callback Functions
+Timers
+Forms
+
 ## -- Week One --
 
 ### -- Day One --
