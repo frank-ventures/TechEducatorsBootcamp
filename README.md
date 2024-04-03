@@ -7,6 +7,19 @@ This respository will serve as a way to keep my Tech Educators projects in order
 As you scroll down, the weeks will be in reverse chronological order.
 They'll show a brief about what we covered each day.
 
+## -- Week Three --
+
+### -- Day One --
+
+Responsiveness and Media Queries
+Accessibility
+
+### -- Day Two --
+
+Fetch
+API
+Node and NPM
+
 ## -- Week Two --
 
 ### -- Day One ---
@@ -27,6 +40,17 @@ CSS Grid
 Callback Functions
 Timers
 Forms
+
+### -- Day Four --
+
+Local Storage
+Project
+
+### -- Bonus Sunday! --
+
+More project time!
+
+- https://github.com/frank-ventures/TechEd-WeekTwo-Project
 
 ## -- Week One --
 
