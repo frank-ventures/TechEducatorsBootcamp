@@ -1,10 +1,8 @@
 // ⛳️ Use the Fetch API to make a request to the JSON Placeholder API and log the response to the console.
 const api1 = document.getElementById("api1");
 const api2 = document.getElementById("api2");
-const projectName = document.getElementById("projectName");
-const projectStargazers = document.getElementById("projectStargazers");
-const projectOwner = document.getElementById("projectOwner");
-const projectSize = document.getElementById("projectSize");
+const githubProjects = document.getElementById("githubProjects");
+const form = document.getElementById("form");
 
 async function getThingFromFarAway() {
   const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
@@ -46,7 +44,7 @@ getStuffFromGitHub();
 function createNewP(thisText) {
   const newP = document.createElement("p");
   newP.textContent = thisText;
-  document.body.appendChild(newP);
+  githubProjects.appendChild(newP);
 }
 
 async function showThingsOnPage(url) {
@@ -56,16 +54,27 @@ async function showThingsOnPage(url) {
   createNewP(`Project owner is: ${request.owner.login}`);
   createNewP(`Size of project is: ${request.size}`);
   createNewP(`Amount of stargazers is: ${request.stargazers_count}`);
-  createNewP(`Found at: <a>${request.html_url}</a>`);
+  createNewP(`Found at: ${request.html_url}`);
   createNewP("-----");
   //   projectName.textContent = `Project name is: ${request.name}`;
   //   projectOwner.textContent = `Project owner is: ${request.owner.login}`;
   //   projectSize.textContent = `Size of project is: ${request.size}`;
   //   projectStargazers.textContent = `Amount of stargazers is: ${request.stargazers_count}`;
 }
-showThingsOnPage(
-  "https://api.github.com/repos/frank-ventures/TechEd-WeekTwo-Project"
-);
+// showThingsOnPage(
+//   "https://api.github.com/repos/frank-ventures/TechEd-WeekTwo-Project"
+// );
 
-showThingsOnPage("https://api.github.com/repos/kubernetes/kubernetes");
-showThingsOnPage("https://api.github.com/repos/facebook/react");
+// showThingsOnPage("https://api.github.com/repos/kubernetes/kubernetes");
+// showThingsOnPage("https://api.github.com/repos/facebook/react");
+
+function log(event) {
+  event.preventDefault();
+  const data = new FormData(form);
+  const userURL = Object.fromEntries(data);
+
+  console.log(userURL);
+  showThingsOnPage(userURL.url);
+}
+
+form.addEventListener("submit", log);

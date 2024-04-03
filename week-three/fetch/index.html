@@ -12,10 +12,27 @@
     <h2>Basic tasks</h2>
     <p id="api1"></p>
     <p id="api2"></p>
-    <h2>Info from my GitHub Project</h2>
-    <p id="projectName"></p>
-    <p id="projectStargazers"></p>
-    <p id="projectOwner"></p>
-    <p id="projectSize"></p>
+    <h2>Info from GitHub Projects</h2>
+    <form action="" id="form">
+      <label for="url">Enter a github URL here: </label>
+      <input type="text" id="url" name="url" />
+      <button type="submit">Go!</button>
+    </form>
+    <p>Examples, in this format:</p>
+    <p>https://api.github.com/repos/facebook/react</p>
+    <p>https://api.github.com/repos/frank-ventures/TechEd-WeekTwo-Project</p>
+    <p>https://api.github.com/repos/kubernetes/kubernetes</p>
+    <p>--- --- ---</p>
+    <p id="githubProjects"></p>
+
+    <h2>Optimising Images</h2>
+    <img
+      src="https://picsum.photos/2000/1000"
+      srcset="
+    https://picsum.photos/500/250    500w,
+    https://picsum.photos/1000/500  1000w,
+    https://picsum.photos/2000/1000 2000w/"
+      alt="Random image from picsum"
+    />
   </body>
 </html>
