@@ -73,8 +73,8 @@ function log(event) {
   const data = new FormData(form);
   const userURL = Object.fromEntries(data);
 
-  console.log(userURL);
-  showThingsOnPage(userURL.url);
+  console.log(`https://api.github.com/repos/${userURL.url}`);
+  showThingsOnPage(`https://api.github.com/repos/${userURL.url}`);
 }
 
 form.addEventListener("submit", log);
