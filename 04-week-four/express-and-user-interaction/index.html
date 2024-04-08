@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./app.js" defer></script>
+    <script src="./server.js" defer></script>
+
+    <title>Playing with Express server</title>
+  </head>
+  <body>
+    <h1>Feel free to enter some stuff into the form below and submit it</h1>
+    <form action="submit" id="userForm">
+      <label for="message">Enter your message here</label>
+      <input type="text" name="message" id="message" />
+      <label for="username">Enter your username here</label>
+      <input type="text" name="username" id="username" />
+      <input type="submit" name="submitbutton" id="submitbutton" />
+    </form>
+    <div id="guestbook"><p>Loading...</p></div>
+  </body>
+</html>
