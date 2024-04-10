@@ -67,5 +67,3 @@ app.get("/gamesjoined", function (request, response) {
 
   response.json(joinedInformation);
 });
-
-console.log(joinedInformation);
