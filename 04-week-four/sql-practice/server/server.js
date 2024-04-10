@@ -64,6 +64,8 @@ app.get("/gamesjoined", function (request, response) {
 `
     )
     .all();
+
+  response.json(joinedInformation);
 });
 
 console.log(joinedInformation);
