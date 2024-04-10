@@ -47,13 +47,14 @@ app.post("/games", function (request, response) {
 });
 
 // Return joined data
-const games = db.prepare("SELECT * FROM games").all();
-console.log(games);
-const platforms = db.prepare("SELECT * FROM platform").all();
-console.log(platforms);
-const joinedInformation = db
-  .prepare(
-    `SELECT
+app.get("/gamesjoined", function (request, response) {
+  const games = db.prepare("SELECT * FROM games").all();
+  console.log(games);
+  const platforms = db.prepare("SELECT * FROM platform").all();
+  console.log(platforms);
+  const joinedInformation = db
+    .prepare(
+      `SELECT
         games.name AS the_game_name,
         games.year AS game_year,
         platform.name AS platform
@@ -61,7 +62,8 @@ const joinedInformation = db
     JOIN platform ON games.platform_id = platform.id
     
 `
-  )
-  .all();
+    )
+    .all();
+});
 
 console.log(joinedInformation);
