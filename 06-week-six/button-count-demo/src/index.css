@@ -15,20 +15,3 @@
 
   font-size: 1.5rem;
 }
-
-.main-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 3rem;
-  border: 3px solid rosybrown;
-
-  color: white;
-  text-shadow: 1px 1px 1px black;
-}
-
-button {
-  padding: 5px;
-}
