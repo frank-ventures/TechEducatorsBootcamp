@@ -1,3 +1,5 @@
+import Button from "./button.jsx";
+
 export default function App() {
   return <MyPageComponent />;
 }
@@ -23,23 +25,28 @@ function Header() {
 
 function MyGalleryComponent() {
   return (
-    <div>
+    <>
       <MyImageComponent
         imageUrl="https://images.unsplash.com/25/puppy-love.jpg?q=80&w=969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         altText="An absolutely terrifying puppo"
         name="Oslo"
       />
+      <Button which={1}>I&apos;ll be the first console log</Button>
+
       <MyImageComponent
         imageUrl="https://images.unsplash.com/25/puppy-love.jpg?q=80&w=969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         altText="An absolutely terrifying puppo"
         name="Otto"
       />
+      <Button which={2}>I&apos;ll be the next console log</Button>
+
       <MyImageComponent
         imageUrl="https://images.unsplash.com/25/puppy-love.jpg?q=80&w=969&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         altText="An absolutely terrifying puppo"
         name="Otis"
       />
-    </div>
+      <Button which={3}>I&apos;ll be the last console log</Button>
+    </>
   );
 }
 

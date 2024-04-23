@@ -54,6 +54,11 @@ body {
   border-bottom: 3px solid hsla(0, 0%, 98%, 0.8);
 }
 
+button {
+  padding: 5px;
+  margin: 10px;
+}
+
 footer {
   text-align: center;
   padding: 10px;
