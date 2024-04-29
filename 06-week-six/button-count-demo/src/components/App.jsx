@@ -8,6 +8,7 @@ import "/src/App.css";
 // import DecreaseButton from "./DecreaseButton";
 
 export default function App() {
+  // Show/Hide some pager content
   const [showThings, setShowThings] = useState(false);
 
   function handleShowThings() {
@@ -15,6 +16,7 @@ export default function App() {
     setShowThings(!showThings);
   }
 
+  // Functions for the counters
   const [count, setCount] = useState(0);
 
   function increaseCount() {
@@ -32,6 +34,7 @@ export default function App() {
   return (
     <section className="main-box">
       <h1>Hello all!</h1>
+
       {showThings ? (
         <Button className="stop-game" whenYouClickMe={handleShowThings}>
           Stop playing? Resets your score!
