@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, NavLink } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
@@ -10,8 +10,9 @@ export default function App() {
     <>
       <h1>Hello! This is my page - Nice innit</h1>
       <nav>
-        <Link to="/">Go home</Link> | <Link to="/about">About me</Link> |{" "}
-        <Link to="/contact">Contact me</Link>
+        <NavLink to="/">Go home</NavLink> |{" "}
+        <NavLink to="/about">About me</NavLink> |{" "}
+        <NavLink to="/contact">Contact me</NavLink>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />

@@ -37,6 +37,9 @@ a {
 a:hover {
   color: orange;
 }
+a.active {
+  border-bottom: 3px solid rgba(255, 123, 0, 0.6);
+}
 
 h1 {
   width: 100vw;
