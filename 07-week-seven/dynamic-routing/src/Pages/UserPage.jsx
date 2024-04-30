@@ -3,17 +3,23 @@ import { useParams, Link, Outlet, useSearchParams } from "react-router-dom";
 export default function UserPage() {
   const { username } = useParams();
 
+  const params = useParams();
+
   const [searchParams, setSearchParams] = useSearchParams();
   const sort = searchParams.get("sort");
+  const condition = searchParams.get("condition");
 
   const handleSearch = (event) => {
     setSearchParams({ sort: event.target.value });
   };
 
+  console.log(searchParams);
+
   return (
     <>
       <h2>Welcome to your user page, {username}.</h2>
       <p>Your name is {username}.</p>
+      {console.log(params)}
 
       <form>
         <label>
@@ -29,6 +35,7 @@ export default function UserPage() {
         </label>
       </form>
       <p>Your sort type is: {sort}</p>
+      <p>Your condition is: {condition}</p>
 
       <nav>
         <Link to="">Profile home</Link>
