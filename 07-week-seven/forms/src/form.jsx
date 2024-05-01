@@ -24,14 +24,14 @@ export default function Form() {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} onChange={handleInputChange}>
         <label htmlFor="name">Your Name Please:</label>
         <input
           type="text"
           id="name"
           name="name"
           value={formValues.name}
-          onChange={handleInputChange}
+          // onChange={handleInputChange}
         />
         <label htmlFor="email">Your email Please:</label>
         <input
@@ -39,7 +39,7 @@ export default function Form() {
           id="email"
           name="email"
           value={formValues.email}
-          onChange={handleInputChange}
+          // onChange={handleInputChange}
         />
         <button type="submit">Submitto!</button>
       </form>
