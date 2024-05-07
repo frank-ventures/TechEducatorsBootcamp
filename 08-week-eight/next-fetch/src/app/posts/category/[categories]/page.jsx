@@ -1,14 +1,17 @@
 import Link from "next/link";
 
-export default async function PostsPage({ searchParams }) {
-  console.log("search params are: ", searchParams);
-  console.log(searchParams.search);
+export default async function Categories({ params, searchParams }) {
+  console.log(params);
 
-  let products = [];
-
-  const response = await fetch("https://dummyjson.com/products");
+  const response = await fetch(
+    `https://dummyjson.com/products/category/${params.categories}`
+  );
   const posts = await response.json();
-  products = posts.products;
+  const products = posts.products;
+  console.log(products);
+  if (products.length < 1) {
+    console.log("no results");
+  }
 
   if (searchParams.sort === "desc") {
     products.reverse();
@@ -16,7 +19,7 @@ export default async function PostsPage({ searchParams }) {
 
   return (
     <>
-      <h2>Results from dummyJSON</h2>
+      <h3>You're on the {params.categories} page</h3>
       <div className="returnedposts">
         {products.length < 1 ? (
           <p>No Results!</p>
@@ -29,7 +32,7 @@ export default async function PostsPage({ searchParams }) {
                   src={`${product.thumbnail}`}
                   alt=""
                 />
-                <Link href={`/posts/${product.id}`}>{product.title}</Link>
+                <Link href={`../${product.id}`}>{product.title}</Link>
               </div>
             );
           })
