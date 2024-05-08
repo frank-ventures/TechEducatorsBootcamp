@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "All dummyJSON Results",
+  description:
+    "All of the results about products gathered from dummyJson appear here"
+};
+
 export default async function PostLayout({ children }) {
   const response = await fetch("https://dummyjson.com/products/categories");
   const categories = await response.json();

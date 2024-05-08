@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+export function generateMetadata({ params }) {
+  return {
+    title: `The ${params.categories} category page`
+  };
+}
+
 export default async function Categories({ params, searchParams }) {
   console.log(params);
 
@@ -19,7 +25,7 @@ export default async function Categories({ params, searchParams }) {
 
   return (
     <>
-      <h3>You're on the {params.categories} page</h3>
+      <h3>You&apos;re on the {params.categories} page</h3>
       <div className="returnedposts">
         {products.length < 1 ? (
           <p>No Results!</p>

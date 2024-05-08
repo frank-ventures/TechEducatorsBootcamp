@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+export let metadata = {
+  title: "All Results"
+};
+
 export default async function PostsPage({ searchParams }) {
   console.log("search params are: ", searchParams);
   console.log(searchParams.search);
@@ -12,6 +16,9 @@ export default async function PostsPage({ searchParams }) {
 
   if (searchParams.sort === "desc") {
     products.reverse();
+    metadata = {
+      title: "Results descended"
+    };
   }
 
   return (
