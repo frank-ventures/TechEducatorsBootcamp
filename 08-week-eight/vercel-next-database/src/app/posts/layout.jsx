@@ -8,7 +8,7 @@ export const metadata = {
 export default function PostsLayout({ children }) {
   return (
     <div>
-      <h2>You're on the Posts Page</h2>
+      <h2>You&apos;re on the Posts Page</h2>
       <h3>Post Actions</h3>
       <Link href="/posts">All Posts</Link>
       <Link href="/posts/addpost">Add New Post</Link>
