@@ -3,7 +3,9 @@ import Link from "next/link";
 
 export default async function Home() {
   const posts = await sql`SELECT * FROM posts`;
+  const [post] = await posts.rows;
   console.log(posts);
+  console.log("posts is ", post);
 
   return (
     <div>
