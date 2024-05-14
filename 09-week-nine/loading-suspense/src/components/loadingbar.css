@@ -1,0 +1,31 @@
+.loading-bar {
+  width: inherit;
+  height: inherit;
+  background-color: rgb(182, 118, 0);
+  position: relative;
+  border-radius: 0.25rem;
+}
+
+.loading-bar::after {
+  content: "";
+  inset: 0;
+  width: 10%;
+  background-color: white;
+
+  position: absolute;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+    left: 0;
+  }
+  50% {
+    opacity: 80%;
+    left: 90%;
+  }
+}
