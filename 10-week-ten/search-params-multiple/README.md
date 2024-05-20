@@ -6,7 +6,7 @@ We can also see an example of how using multiple params works with an API.
 
 The basis for this understanding came from [The Next.js docs here](https://nextjs.org/docs/app/api-reference/functions/use-search-params#updating-searchparams)
 
-and also this excellent video walkthrough here, [From Adam richardson on YouTube](https://www.youtube.com/watch?v=HuZxu_i4gO0).
+and also this excellent video walkthrough here, [From Adam Richardson on YouTube](https://www.youtube.com/watch?v=HuZxu_i4gO0).
 Also, [Here's his code](https://www.adamrichardson.dev/blog/nextjs-search-params-guide#nextjs-implementation)
 
 It isn't explicitly clear, so here's some clarity:

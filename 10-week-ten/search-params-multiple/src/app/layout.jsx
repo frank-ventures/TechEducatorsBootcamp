@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
             <span className="regular">Real Example</span>
             <span className="meow">Meow time!</span>
           </Link>
+          <Link href={"/resources"}>Resources</Link>
         </nav>
         {children}
       </body>
