@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  gap: 2rem;
+  background-color: rgba(128, 128, 128, 0.25);
+  height: 3rem;
+  place-items: center;
+}
+.cat-link .meow {
+  display: none;
+}
+.cat-link:hover .regular {
+  display: none;
+}
+.cat-link:hover .meow {
+  display: inline;
+}
+
+img {
+  max-height: 200px;
+  width: auto;
+}
+
+.cat-container {
+  display: flex;
+  flex-wrap: wrap;
+}
