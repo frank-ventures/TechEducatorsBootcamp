@@ -11,6 +11,7 @@ export default function ExampleClientComponent() {
 
   // Get a new searchParams string by merging the current
   // searchParams with provided key/value pairs
+  // This is a merge of the Next.js docs, and ChatGPT magic:
   const createQueryString = useCallback(
     (paramsToUpdate) => {
       const params = new URLSearchParams(searchParams.toString());
