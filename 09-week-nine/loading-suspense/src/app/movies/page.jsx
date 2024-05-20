@@ -8,7 +8,7 @@ export default function Movies() {
     <>
       <div className="movies-container flex gap-2 w-dvw flex-wrap">
         <div className="movie-box">
-          <Suspense fallback={<LoadingBar />}>
+          <Suspense fallback={<p>I am loading</p>}>
             <SlowBox />
           </Suspense>
         </div>
