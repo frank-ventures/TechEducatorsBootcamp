@@ -38,11 +38,64 @@ export default function ExampleClientComponent() {
     [searchParams]
   );
 
+  // Get individual search params like this:
+  const searchSort = searchParams.get("sort");
+  console.log(searchSort);
+
+  // Convert searchParams to an array of key-value pairs. Just for our understanding:
+  const searchParamsEntries = Array.from(searchParams.entries());
+
   console.log(searchParams);
+
+  // EXAMPLE Function to fetch data from the API
+  //  const fetchData = useCallback(async () => {
+  //   try {
+  //     const queryString = searchParams.toString();
+  //     const apiUrl = `https://api.example.com/data?${queryString}`;
+  //     const response = await fetch(apiUrl);
+
+  //     if (!response.ok) {
+  //       throw new Error("Network response was not ok");
+  //     }
+
+  //     const data = await response.json();
+  //     setApiData(data);
+  //   } catch (error) {
+  //     setError(error.message);
+  //   }
+  // }, [searchParams]);
+
+  // Fetch data whenever searchParams change
+  // useEffect(() => {
+  //   fetchData();
+  // }, [fetchData]);
+
   return (
     <>
-      <h3>Search params are: {searchParams}</h3>
-      <p>Sort By</p>
+      <h3>Search Params</h3>
+      <hr />
+
+      <p>
+        The searchParams variable is: {searchParams}, but the magic lies in
+        searchParams.toString() - {searchParams.toString()}
+      </p>
+      <p>
+        Just to display what we've got onto our page, we've used:
+        <code> Array.from(searchParams.entries())</code>{" "}
+      </p>
+      <p>
+        And then mapped searchParamsEntries{" "}
+        <em>(If there's nothing here, there are no search params)</em>:
+      </p>
+      <ul>
+        {searchParamsEntries.map(([key, value]) => (
+          <li key={key}>
+            {key}: {value}
+          </li>
+        ))}
+      </ul>
+      <hr />
+      <p>Sort: {searchParams.get("sort")}</p>
 
       {/* Button for sorting */}
 
@@ -60,6 +113,8 @@ export default function ExampleClientComponent() {
       >
         DESC
       </button>
+
+      <p>Category: {searchParams.get("category")}</p>
 
       {/* Button for filtering by category */}
       <button
@@ -81,6 +136,8 @@ export default function ExampleClientComponent() {
         Movies
       </button>
 
+      <p>Page: {searchParams.get("page")}</p>
+
       {/* Button for setting page number */}
       <button
         onClick={() => {
@@ -96,6 +153,7 @@ export default function ExampleClientComponent() {
       >
         Page 2
       </button>
+      <hr />
 
       <p>Clear Specific Params</p>
 
