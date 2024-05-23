@@ -1,4 +1,4 @@
-# TechEducatorsBootcamp
+# Tech Educators Bootcamp
 
 This repo created on Wednesday 20th March 2024
 
